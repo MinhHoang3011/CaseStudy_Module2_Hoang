@@ -2,7 +2,7 @@ package Model;
 
 import java.io.Serializable;
 
-public class Medicine implements Serializable {
+public abstract class Medicine implements Serializable {
     private int id;
     private String name;
     private double price;
@@ -72,13 +72,6 @@ public class Medicine implements Serializable {
 
     @Override
     public String toString() {
-        return "Medicine{" +
-                "id=" + id +
-                ", name='" + name + '\'' +
-                ", price=" + price +
-                ", brand='" + brand + '\'' +
-                ", dateOfManufacture='" + dateOfManufacture + '\'' +
-                ", expiry='" + expiry + '\'' +
-                '}';
+        return String.format("║ %-8s ║ %-10.0f ║ %-14s ║ %-105s ║",id ,name ,price, brand, dateOfManufacture, expiry);
     }
 }
