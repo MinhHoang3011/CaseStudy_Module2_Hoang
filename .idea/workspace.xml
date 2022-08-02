@@ -5,20 +5,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="4a83c9ea-3753-4c39-885a-8b27425de8b5" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/CaseStudy_Module2.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Controller/IManager.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Model/Analgesic.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Model/Antibiotics.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Model/Bill.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Model/Medicine.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Model/Tonic.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Model/Vitamin.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/View/Client.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Controller/AnalgesicManager.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Controller/MedicinManager.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Storage/IOFileBinary.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Controller/IManager.java" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -50,12 +42,14 @@
   "keyToString": {
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "WebServerToolWindowFactoryState": "false",
     "last_opened_file_path": "C:/Users/Admin/IdeaProjects/CaseStudy_Module2",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
     "project.structure.last.edited": "Modules",
     "project.structure.proportion": "0.0",
     "project.structure.side.proportion": "0.0",
@@ -73,7 +67,8 @@
       <workItem from="1659319857046" duration="3917000" />
       <workItem from="1659328594606" duration="4551000" />
       <workItem from="1659341804872" duration="100000" />
-      <workItem from="1659343378261" duration="3600000" />
+      <workItem from="1659343378261" duration="3878000" />
+      <workItem from="1659423169190" duration="6437000" />
     </task>
     <servers />
   </component>
