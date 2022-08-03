@@ -1,6 +1,4 @@
-package Controller;
-
-import Model.Tonic;
+package controller;
 
 public interface MedicinManager<E> {
     void display();
@@ -10,5 +8,4 @@ public interface MedicinManager<E> {
 
     void editName (int id, String editName);
     void editPrice(int id, double price);
-    void editBrand(int id, String brand);
 }

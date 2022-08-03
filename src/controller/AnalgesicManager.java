@@ -1,8 +1,8 @@
-package Controller;
+package controller;
 
-import Model.Analgesic;
-import Model.Medicine;
-import Storage.IOFileBinary;
+import model.Analgesic;
+import model.Medicine;
+import storage.IOFileBinary;
 
 import java.io.File;
 import java.util.ArrayList;
@@ -69,17 +69,6 @@ public class AnalgesicManager implements MedicinManager<Analgesic>{
             }
         }
         ioFileBinaryAnalgesic.writerFileData(listAnalgesic,"FileDataCase");
-    }
-
-    @Override
-    public void editBrand(int id, String brand) {
-        for (Medicine m: listAnalgesic
-             ) {
-            if (m.getId() == id) {
-                m.setBrand(brand);
-            }
-        }
-        ioFileBinaryAnalgesic.writerFileData(listAnalgesic, "FileDataCase");
     }
 }
 

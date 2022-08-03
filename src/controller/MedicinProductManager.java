@@ -1,9 +1,8 @@
-package Controller;
+package controller;
 
-import Model.Medicine;
-import Storage.IOFileBinary;
+import model.Medicine;
+import storage.IOFileBinary;
 
-import javax.swing.*;
 import java.io.File;
 import java.io.IOException;
 import java.util.ArrayList;
@@ -77,15 +76,5 @@ public class MedicinProductManager implements MedicinManager<Medicine> {
         }
         }
         medicineIOFileBinary.writerFileData(medicineArrayList,"FileDataMedidcine");
-    }
-
-    @Override
-    public void editBrand(int id, String brand) {
-        for (Medicine m:medicineArrayList
-             ) {if (m.getId() == id){
-                 m.setBrand(brand);
-        }
-        }
-        medicineIOFileBinary.writerFileData(medicineArrayList,"FileDataMedicine");
     }
 }

@@ -1,8 +1,7 @@
-package Model;
+package model;
 
 import java.io.Serializable;
 import java.time.LocalDateTime;
-import java.time.format.DateTimeFormatter;
 import java.util.ArrayList;
 
 public class Bill implements Serializable {
@@ -35,14 +34,6 @@ public class Bill implements Serializable {
         return totalPrice;
     }
 
-    public void display(){
-        System.out.println("╔====================================================================================================================================================╗");
-        System.out.println("\t Username:" + userName);
-        System.out.printf("║    %-5s ║    %-7s ║      %-9s ║                                    %-70s ║\n", "ID","Giá","Hãng","Tên sản phẩm");
-        medicine.forEach(System.out::println);
-        System.out.println("  Total Price " + totalPrice + '\t' + "  Purchase Date: " + purchaseDate.format(DateTimeFormatter.ofPattern("dd/MM/yyyy HH:mm:ss")));
-        System.out.println("╚====================================================================================================================================================╝");
-    }
 
     @Override
     public String toString() {

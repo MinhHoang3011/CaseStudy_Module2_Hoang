@@ -5,12 +5,27 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="4a83c9ea-3753-4c39-885a-8b27425de8b5" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/Controller/MedicinProductManager.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Controller/VitaminManager.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/account/Acccount.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/account/AccountManager.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/data_file/user.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/login/Login.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/validate/DetailValidate.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/validate/ValidateAll.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Controller/AntibioticsManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/AntibioticsManager.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Controller/MedicinManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/MedicinManager.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Model/Antibiotics.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Model/Antibiotics.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Controller/AnalgesicManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/controller/AnalgesicManager.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Controller/AntibioticsManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/controller/AntibioticsManager.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Controller/MedicinManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/controller/MedicinManager.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Controller/MedicinProductManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/controller/MedicinProductManager.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Controller/TonicManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/controller/TonicManager.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Controller/VitaminManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/controller/VitaminManager.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Model/Analgesic.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/model/Analgesic.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Model/Antibiotics.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/model/Antibiotics.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Model/Bill.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/model/Bill.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Model/Medicine.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/model/Medicine.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Model/Tonic.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/model/Tonic.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Model/Vitamin.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/model/Vitamin.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Storage/IOFileBinary.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/storage/IOFileBinary.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/View/Client.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/view/Client.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -56,6 +71,14 @@
     &quot;settings.editor.selected.configurable&quot;: &quot;advanced.settings&quot;
   }
 }</component>
+  <component name="RecentsManager">
+    <key name="CreateClassDialog.RecentsKey">
+      <recent name="account" />
+    </key>
+    <key name="IntroduceConstantDialog.RECENTS_KEY">
+      <recent name="account.AccountManager" />
+    </key>
+  </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -73,7 +96,7 @@
       <workItem from="1659489884502" duration="113000" />
       <workItem from="1659490085293" duration="30000" />
       <workItem from="1659490271396" duration="2284000" />
-      <workItem from="1659493132710" duration="5088000" />
+      <workItem from="1659493132710" duration="12258000" />
     </task>
     <servers />
   </component>

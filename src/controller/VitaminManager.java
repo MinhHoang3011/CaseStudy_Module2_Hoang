@@ -1,8 +1,8 @@
-package Controller;
+package controller;
 
-import Model.Medicine;
-import Model.Vitamin;
-import Storage.IOFileBinary;
+import model.Medicine;
+import model.Vitamin;
+import storage.IOFileBinary;
 
 import java.io.File;
 import java.util.ArrayList;
@@ -66,16 +66,6 @@ public class VitaminManager implements MedicinManager<Vitamin>{
         for (Medicine m:listVitamin
              ) { if (m.getId() == id) {
                  m.setPrice(price);
-        }
-        }
-        vitaminIOFileBinary.writerFileData(listVitamin,"FileDataVitamin");
-    }
-
-    @Override
-    public void editBrand(int id, String brand) {
-        for (Medicine m:listVitamin
-             ) {if (m.getId() == id) {
-                 m.setBrand(brand);
         }
         }
         vitaminIOFileBinary.writerFileData(listVitamin,"FileDataVitamin");

@@ -1,8 +1,8 @@
-package Controller;
+package controller;
 
-import Model.Antibiotics;
-import Model.Medicine;
-import Storage.IOFileBinary;
+import model.Antibiotics;
+import model.Medicine;
+import storage.IOFileBinary;
 
 import java.io.File;
 import java.util.ArrayList;
@@ -65,16 +65,6 @@ public class AntibioticsManager implements MedicinManager<Antibiotics> {
         for (Medicine m:antibioticsArrayList
              ) {if (m.getId() == id){
                  m.setPrice(price);
-        }
-        }
-        antibioticsIOFileBinary.writerFileData(antibioticsArrayList,"FileDataCase1");
-    }
-
-    @Override
-    public void editBrand(int id, String brand) {
-        for (Medicine m:antibioticsArrayList
-             ) {if (m.getId() == id){
-                 m.setBrand(brand);
         }
         }
         antibioticsIOFileBinary.writerFileData(antibioticsArrayList,"FileDataCase1");

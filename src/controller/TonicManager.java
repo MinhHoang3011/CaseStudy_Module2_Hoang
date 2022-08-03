@@ -1,8 +1,8 @@
-package Controller;
+package controller;
 
-import Model.Medicine;
-import Model.Tonic;
-import Storage.IOFileBinary;
+import model.Medicine;
+import model.Tonic;
+import storage.IOFileBinary;
 
 import java.io.File;
 import java.util.ArrayList;
@@ -66,16 +66,6 @@ public class TonicManager implements MedicinManager<Tonic> {
         for (Medicine m: listTonic
         ) { if (m.getId()== id) {
             m.setPrice(price);
-        }
-        }
-        tonicIOFileBinary.writerFileData(listTonic,"FileDataCase1");
-    }
-
-    @Override
-    public void editBrand(int id, String brand) {
-        for (Medicine m: listTonic
-        ) { if (m.getId() == id) {
-            m.setBrand(brand);
         }
         }
         tonicIOFileBinary.writerFileData(listTonic,"FileDataCase1");
