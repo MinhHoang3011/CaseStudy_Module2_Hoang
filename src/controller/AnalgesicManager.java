@@ -70,6 +70,7 @@ public class AnalgesicManager implements MedicinManager<Analgesic>{
         }
         ioFileBinaryAnalgesic.writerFileData(listAnalgesic,"FileDataCase");
     }
+
 }
 
 

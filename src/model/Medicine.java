@@ -7,13 +7,16 @@ public abstract class Medicine implements Serializable {
     private String name;
     private double price;
 
-    public Medicine(int id, String name, double price) {
+    private String unit;
+
+    public Medicine() {
+    }
+
+    public Medicine(int id, String name, double price, String unit) {
         this.id = id;
         this.name = name;
         this.price = price;
-    }
-
-    public Medicine() {
+        this.unit = unit;
     }
 
     public int getId() {
@@ -40,9 +43,16 @@ public abstract class Medicine implements Serializable {
         this.price = price;
     }
 
+    public String getUnit() {
+        return unit;
+    }
+
+    public void setUnit(String unit) {
+        this.unit = unit;
+    }
 
     @Override
     public String toString() {
-        return String.format("║ %-8s ║ %-10.0f ║ %-14s ║ %-105s ║",id ,name ,price);
+        return String.format("║ %-8s ║ %-10.0f ║ %-14s ║ %-105s ║",id ,unit ,price,name);
     }
 }
