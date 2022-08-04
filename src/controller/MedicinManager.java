@@ -8,4 +8,6 @@ public interface MedicinManager<E> {
 
     void editName (int id, String editName);
     void editPrice(int id, double price);
+
+//    void editUnit (int id, String editUnit);
 }

@@ -53,6 +53,11 @@ public abstract class Medicine implements Serializable {
 
     @Override
     public String toString() {
-        return String.format("║ %-8s ║ %-10.0f ║ %-14s ║ %-105s ║",id ,unit ,price,name);
+        return "Medicine{" +
+                "id=" + id +
+                ", name='" + name + '\'' +
+                ", price=" + price +
+                ", unit='" + unit + '\'' +
+                '}';
     }
 }

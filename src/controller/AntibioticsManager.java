@@ -12,10 +12,10 @@ public class AntibioticsManager implements MedicinManager<Antibiotics> {
     private IOFileBinary<Antibiotics> antibioticsIOFileBinary = new IOFileBinary<>();
 
     public AntibioticsManager(){
-        if (new File("FileDataCase1").length()==0) {
+        if (new File("FileDataAntibiotics").length()==0) {
             antibioticsArrayList = new ArrayList<>();
         }else {
-            antibioticsArrayList = antibioticsIOFileBinary.readFileData("FileDataCase1");
+            antibioticsArrayList = antibioticsIOFileBinary.readFileData("FileDataAntibiotics");
         }
     }
     public ArrayList<Antibiotics> getAntibioticsArrayList(){
@@ -24,7 +24,7 @@ public class AntibioticsManager implements MedicinManager<Antibiotics> {
 
     @Override
     public void display() {
-        antibioticsArrayList = antibioticsIOFileBinary.readFileData("FileDataCase1");
+        antibioticsArrayList = antibioticsIOFileBinary.readFileData("FileDataAntibiotics");
         if (antibioticsArrayList.isEmpty()){
             System.out.println("\t\t Chưa có sản phẩm nào ");
         }else {
@@ -35,19 +35,19 @@ public class AntibioticsManager implements MedicinManager<Antibiotics> {
     @Override
     public void delete(int id) {
         antibioticsArrayList.removeIf(p -> p.getId() == id);
-        antibioticsIOFileBinary.writerFileData(antibioticsArrayList,"FileDataCase1");
+        antibioticsIOFileBinary.writerFileData(antibioticsArrayList,"FileDataAntibiotics");
     }
 
     @Override
     public void deleteAll() {
         antibioticsArrayList.clear();
-        antibioticsIOFileBinary.writerFileData(antibioticsArrayList,"FileDataCase1");
+        antibioticsIOFileBinary.writerFileData(antibioticsArrayList,"FileDataAntibiotics");
     }
 
     @Override
     public void add(Antibiotics antibiotics) {
         antibioticsArrayList.add(antibiotics);
-        antibioticsIOFileBinary.writerFileData(antibioticsArrayList,"FileDataCase1");
+        antibioticsIOFileBinary.writerFileData(antibioticsArrayList,"FileDataAntibiotics");
     }
 
     @Override
@@ -57,7 +57,7 @@ public class AntibioticsManager implements MedicinManager<Antibiotics> {
                  m.setName(editName);
         }
         }
-        antibioticsIOFileBinary.writerFileData(antibioticsArrayList,"FileDataCase1");
+        antibioticsIOFileBinary.writerFileData(antibioticsArrayList,"FileDataAntibiotics");
     }
 
     @Override
@@ -67,6 +67,6 @@ public class AntibioticsManager implements MedicinManager<Antibiotics> {
                  m.setPrice(price);
         }
         }
-        antibioticsIOFileBinary.writerFileData(antibioticsArrayList,"FileDataCase1");
+        antibioticsIOFileBinary.writerFileData(antibioticsArrayList,"FileDataAntibiotics");
     }
 }

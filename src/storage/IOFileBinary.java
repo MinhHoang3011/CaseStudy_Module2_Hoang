@@ -3,7 +3,8 @@ package storage;
 import java.io.*;
 import java.util.ArrayList;
 
-public class IOFileBinary<E> {
+public class IOFileBinary<E> implements Serializable {
+    private static final long serialVersionUID = -4333316296251054416L;
 
     public void writerFileData(ArrayList<E> arrayData , String pathName){
         try {
@@ -14,13 +15,12 @@ public class IOFileBinary<E> {
             e.printStackTrace();
         }
     }
-    public ArrayList<E> readFileData(String pathName) {
+    public ArrayList<E> readFileData(String pathName) throws IOException {
         try {
             ObjectInputStream objectInputStream = new ObjectInputStream(new FileInputStream(pathName));
-        } catch (FileNotFoundException e) {
-            throw new RuntimeException(e);
-        } catch (IOException e) {
-            throw new RuntimeException(e);
+            return (ArrayList<E>) objectInputStream.readObject();
+        } catch (IOException | ClassNotFoundException e) {
+            e.printStackTrace();
         }
         return null;
     }

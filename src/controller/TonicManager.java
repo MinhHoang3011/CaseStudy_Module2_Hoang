@@ -12,10 +12,10 @@ public class TonicManager implements MedicinManager<Tonic> {
     private IOFileBinary<Tonic> tonicIOFileBinary = new IOFileBinary<>();
 
     public TonicManager() {
-        if (new File("FileDataCase2").length() == 0 ){
+        if (new File("FileDataTonic").length() == 0 ){
             listTonic = new ArrayList<>();
         }else {
-            listTonic = tonicIOFileBinary.readFileData("FileDataCase2");
+            listTonic = tonicIOFileBinary.readFileData("FileDataTonic");
         }
     }
 
@@ -25,7 +25,7 @@ public class TonicManager implements MedicinManager<Tonic> {
 
     @Override
     public void display() {
-        listTonic = tonicIOFileBinary.readFileData("FileDataCase2");
+        listTonic = tonicIOFileBinary.readFileData("FileDataTonic");
         if (listTonic.isEmpty()) {
             System.err.println("\t\tChưa có sản phẩm nào");
         }else {
@@ -36,19 +36,19 @@ public class TonicManager implements MedicinManager<Tonic> {
     @Override
     public void delete(int id) {
         listTonic.removeIf(p ->p.getId()== id );
-        tonicIOFileBinary.writerFileData(listTonic,"FileDataCase2");
+        tonicIOFileBinary.writerFileData(listTonic,"FileDataTonic");
     }
 
     @Override
     public void deleteAll() {
         listTonic.clear();
-        tonicIOFileBinary.writerFileData(listTonic,"FileDataCase2");
+        tonicIOFileBinary.writerFileData(listTonic,"FileDataTonic");
     }
 
     @Override
     public void add(Tonic tonic) {
         listTonic.add(tonic);
-        tonicIOFileBinary.writerFileData(listTonic,"FileDataCase2");
+        tonicIOFileBinary.writerFileData(listTonic,"FileDataTonic");
     }
 
     @Override
@@ -58,7 +58,7 @@ public class TonicManager implements MedicinManager<Tonic> {
             m.setName(editName);
         }
         }
-        tonicIOFileBinary.writerFileData(listTonic,"FileDataCase2");
+        tonicIOFileBinary.writerFileData(listTonic,"FileDataTonic");
     }
 
     @Override
@@ -68,6 +68,6 @@ public class TonicManager implements MedicinManager<Tonic> {
             m.setPrice(price);
         }
         }
-        tonicIOFileBinary.writerFileData(listTonic,"FileDataCase1");
+        tonicIOFileBinary.writerFileData(listTonic,"FileDataTonic");
     }
 }

@@ -40,6 +40,11 @@ public class MedicinProductManager implements MedicinManager<Medicine> {
         }
     }
 
+    public static void main(String[] args) {
+        MedicinProductManager medicinProductManager = new MedicinProductManager();
+        medicinProductManager.display();
+    }
+
     @Override
     public void delete(int id) {
         medicineArrayList.removeIf(p -> p.getId() == id);
