@@ -1,5 +1,6 @@
 package controller;
 
+import crawlsData.ListDataMedicin;
 import model.Medicine;
 import storage.IOFileBinary;
 
@@ -27,6 +28,22 @@ public class MedicinProductManager implements MedicinManager<Medicine> {
     }
     public void setDataCrawls() {
     }
+    public void setMedicineArrayList() {
+        ListDataMedicin listDataMedicin = new ListDataMedicin();
+        medicineArrayList.addAll(listDataMedicin.setListAnagesic());
+        medicineArrayList.addAll(listDataMedicin.setListAntibiotics());
+        medicineArrayList.addAll(listDataMedicin.setListTonic());
+        medicineArrayList.addAll(listDataMedicin.setListVitamin());
+        medicineIOFileBinary.writerFileData(medicineArrayList,"FileDataMedicine");
+    }
+
+    public static void main(String[] args) {
+        MedicinProductManager medicinProductManager = new MedicinProductManager();
+        medicinProductManager.setMedicineArrayList();
+    }
+    public void getMedicineArrayLists(){
+        medicineIOFileBinary.readFileData("FileDataMedicine");
+    }
     public ArrayList<Medicine> getMedicineArrayList() {
         return medicineArrayList;
     }
@@ -36,13 +53,12 @@ public class MedicinProductManager implements MedicinManager<Medicine> {
         if (medicineArrayList.isEmpty()) {
             System.err.println("\t\t Chưa có sản phẩm nào ");
         }else {
-            medicineArrayList.forEach(System.out::println);
-        }
-    }
+            for (Medicine m:medicineArrayList
+                 ) {
+                System.out.println(m);
 
-    public static void main(String[] args) {
-        MedicinProductManager medicinProductManager = new MedicinProductManager();
-        medicinProductManager.display();
+            }
+        }
     }
 
     @Override

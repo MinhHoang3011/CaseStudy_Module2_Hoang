@@ -44,7 +44,7 @@ public class CrawlAntibiotics {
             ArrayList<Element> elementsPrice = doc.getElementsByClass("P_disprice");
             ArrayList<Element> elementsUnit = doc.getElementsByClass("qcdg");
 
-            int id = 0;
+            int id = 6;
             for (int i = 1; i <= 5; i++) {
                 String name = elementsName.get(i).getElementsByTag("h3").text();
                 String price = elementsPrice.get(i).getElementsByTag("b").text();

@@ -12,7 +12,7 @@ public class Analgesic extends Medicine implements Serializable {
 
     @Override
     public String toString() {
-        return "Medicine{" +
+        return "Analgesic{" +
                 "id=" + getId() +
                 ", name='" + getName() + '\'' +
                 ", price=" + getPrice() +

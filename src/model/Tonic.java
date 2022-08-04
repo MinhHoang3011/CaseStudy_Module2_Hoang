@@ -12,6 +12,11 @@ public class Tonic extends Medicine implements Serializable {
 
     @Override
     public String toString() {
-        return "Tonic{}";
+        return "Tonic{" +
+                "id=" + getId() +
+                ", name='" + getName() + '\'' +
+                ", price=" + getPrice() +
+                ", unit='" + getUnit() + '\'' +
+                '}';
     }
 }

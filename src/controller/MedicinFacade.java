@@ -47,6 +47,7 @@ public class MedicinFacade {
                 Tonic tonic = new Tonic(id, name, price, unit);
                 tonicManager.add(tonic);
                 medicinProductManager.add(tonic);
+                break;
         }
     }
     public void displayChoice(int choice) {
@@ -101,7 +102,7 @@ public class MedicinFacade {
                 break;
             case 2:
                 System.out.println("Nhập giá mới");
-                double price = scanner.nextDouble();
+                double price = Double.parseDouble(scanner.nextLine());
                 medicinProductManager.editPrice(id,price);
                 analgesicManager.editPrice(id, price);
                 antibioticsManager.editPrice(id,price);
@@ -139,6 +140,9 @@ public class MedicinFacade {
         return medicine;
     }
 
-
+    public static void main(String[] args) {
+        MedicinFacade medicinFacade = new MedicinFacade();
+        medicinFacade.displayChoice(1);
+    }
     }
 

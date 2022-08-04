@@ -13,6 +13,11 @@ public class Antibiotics extends Medicine implements Serializable {
 
     @Override
     public String toString() {
-        return "Antibiotics{}";
+        return "Antibiotic{" +
+                "id=" + getId() +
+                ", name='" + getName() + '\'' +
+                ", price=" + getPrice() +
+                ", unit='" + getUnit() + '\'' +
+                '}';
     }
 }

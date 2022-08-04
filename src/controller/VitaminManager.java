@@ -28,7 +28,11 @@ public class VitaminManager implements MedicinManager<Vitamin>{
         if (listVitamin.isEmpty()) {
             System.err.println("\t\t Chưa có sản phẩm nào ");
         }else {
-            listVitamin.forEach(System.out::println);
+            for (Vitamin v: listVitamin
+                 ) {
+                System.out.println(v);
+
+            }
         }
     }
 

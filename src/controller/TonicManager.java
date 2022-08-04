@@ -29,7 +29,11 @@ public class TonicManager implements MedicinManager<Tonic> {
         if (listTonic.isEmpty()) {
             System.err.println("\t\tChưa có sản phẩm nào");
         }else {
-            listTonic.forEach(System.out::println);
+            for (Tonic t:listTonic
+                 ) {
+                System.out.println(t);
+
+            }
         }
     }
 

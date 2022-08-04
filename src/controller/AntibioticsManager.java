@@ -28,7 +28,10 @@ public class AntibioticsManager implements MedicinManager<Antibiotics> {
         if (antibioticsArrayList.isEmpty()){
             System.out.println("\t\t Chưa có sản phẩm nào ");
         }else {
-            antibioticsArrayList.forEach(System.out::println);
+            for (Antibiotics a:antibioticsArrayList
+                 ) {
+                System.out.println(a);
+            }
         }
     }
 

@@ -40,7 +40,7 @@ public class CrawlsAnalgesic {
             ArrayList<Element> elementName = doc.getElementsByClass("text-prod");
             ArrayList<Element> elementPrice = doc.getElementsByClass("P_disprice");
             ArrayList<Element> elementUnit = doc.getElementsByClass("qcdg");
-            int id =6;
+            int id =1;
             for (int i = 1; i <= 5 ; i++) {
                 String name = elementName.get(i).getElementsByTag("h3").text();
                 String price = elementPrice.get(i).getElementsByTag("b").text();

@@ -5,26 +5,22 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="4a83c9ea-3753-4c39-885a-8b27425de8b5" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/FileDataAnalgesic" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/FileDataAntibiotics" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/FileDataTonic" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/FileDataVitamin" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/crawlsData/ListDataMedicin.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FileDataAnalgesic" beforeDir="false" afterPath="$PROJECT_DIR$/FileDataAnalgesic" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FileDataAntibiotics" beforeDir="false" afterPath="$PROJECT_DIR$/FileDataAntibiotics" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FileDataTonic" beforeDir="false" afterPath="$PROJECT_DIR$/FileDataTonic" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FileDataVitamin" beforeDir="false" afterPath="$PROJECT_DIR$/FileDataVitamin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/controller/AnalgesicManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/controller/AnalgesicManager.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/controller/AntibioticsManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/controller/AntibioticsManager.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/controller/MedicinFacade.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/controller/MedicinFacade.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/controller/MedicinManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/controller/MedicinManager.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/controller/MedicinProductManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/controller/MedicinProductManager.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/controller/TonicManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/controller/TonicManager.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/crawlsData/CrawlAntibiotics.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/crawlsData/CrawlAntibiotics.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/crawlsData/CrawlTonic.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/crawlsData/CrawlTonic.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/crawlsData/CrawlVitamin.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/crawlsData/CrawlVitamin.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/crawlsData/CrawlsAnalgesic.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/crawlsData/CrawlsAnalgesic.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/crawlsData/ListDataCrawl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/crawlsData/ListDataCrawl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/controller/VitaminManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/controller/VitaminManager.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/model/Analgesic.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/model/Analgesic.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/model/Medicine.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/model/Medicine.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/model/Antibiotics.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/model/Antibiotics.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/model/Tonic.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/model/Tonic.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/model/Vitamin.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/model/Vitamin.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/storage/IOFileBinary.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/storage/IOFileBinary.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/view/Client.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/view/Client.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -82,7 +78,7 @@
       <recent name="account.AccountManager" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.MedicinProductManager">
+  <component name="RunManager" selected="Application.MedicinFacade">
     <configuration name="AnalgesicManager" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="controller.AnalgesicManager" />
       <module name="CaseStudy_Module2" />
@@ -137,8 +133,8 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.MedicinProductManager" />
         <item itemvalue="Application.MedicinFacade" />
+        <item itemvalue="Application.MedicinProductManager" />
         <item itemvalue="Application.ListDataMedicin" />
         <item itemvalue="Application.AnalgesicManager" />
       </list>
@@ -162,7 +158,7 @@
       <workItem from="1659490085293" duration="30000" />
       <workItem from="1659490271396" duration="2284000" />
       <workItem from="1659493132710" duration="20260000" />
-      <workItem from="1659575276134" duration="21819000" />
+      <workItem from="1659575276134" duration="24570000" />
     </task>
     <servers />
   </component>

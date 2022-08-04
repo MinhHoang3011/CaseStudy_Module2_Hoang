@@ -13,6 +13,11 @@ public class Vitamin extends Medicine implements Serializable {
 
     @Override
     public String toString() {
-        return "Vitamin{}";
+        return "Vitamin{" +
+                "id=" + getId() +
+                ", name='" + getName() + '\'' +
+                ", price=" + getPrice() +
+                ", unit='" + getUnit() + '\'' +
+                '}';
     }
 }

@@ -13,7 +13,7 @@ public class AnalgesicManager implements MedicinManager<Analgesic>{
     private ArrayList<Analgesic> listAnalgesic;
     private IOFileBinary<Analgesic> ioFileBinaryAnalgesic = new IOFileBinary<>();
 
-    public AnalgesicManager() throws IOException {
+    public AnalgesicManager(){
         if (new File("FileDataAnalgesic").length() == 0) {
             listAnalgesic = new ArrayList<>();
         }else {

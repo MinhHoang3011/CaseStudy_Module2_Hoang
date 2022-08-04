@@ -15,7 +15,7 @@ public class IOFileBinary<E> implements Serializable {
             e.printStackTrace();
         }
     }
-    public ArrayList<E> readFileData(String pathName) throws IOException {
+    public ArrayList<E> readFileData(String pathName) {
         try {
             ObjectInputStream objectInputStream = new ObjectInputStream(new FileInputStream(pathName));
             return (ArrayList<E>) objectInputStream.readObject();
