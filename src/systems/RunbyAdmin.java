@@ -29,7 +29,7 @@ public class RunbyAdmin {
                 System.out.println("║>[3]. Xóa sản phẩm thuốc                                    ║");
                 System.out.println("║>[4]. Hiển thị sản phẩm thuốc                               ║");
                 System.out.println("║>[5]. Khôi phục dữ liệu                                     ║");
-                System.out.println("║>[6]. Tìm kiếm thuốc theo ID                                ║");
+                System.out.println("║>[6]. Tìm kiếm thuốc                                        ║");
                 System.out.println("║>[0]. Đăng xuất                                             ║");
                 System.out.println("╚============================================================╝");
                 System.out.println(" Mời nhập lựa chọn !!! >>");
@@ -65,9 +65,7 @@ public class RunbyAdmin {
                         medicinFacade.backUpData();
                         break;
                     case 6:
-                        System.out.println("Nhập ID thuốc cần tìm !!!");
-                        int id = Integer.parseInt(scanner.nextLine());
-                        medicinFacade.findMedicineById(id);
+                        seach();
                         break;
                     case 0:
                         System.out.println("Đã đăng xuất !!!");
@@ -216,4 +214,21 @@ public class RunbyAdmin {
             display();
         }
     }
+    public void seach() {
+        try {
+            System.out.println("╔============================================╗");
+            System.out.println("║   ▂ ▃ ▅ ▆ █ TÌM KIẾM SẢN PHẨM  █ ▆ ▅ ▃ ▂   ║");
+            System.out.println("╠============================================╣");
+            System.out.println("║>[1]. Theo tên thuốc                        ║");
+            System.out.println("║>[2]. Theo ID                               ║");
+            System.out.println("║>[0]. Thoát                                 ║");
+            System.out.println("╚============================================╝");
+            System.out.print(" Mời bạn nhập vào lựa chọn: ");
+            int choiceAdd = Integer.parseInt(scanner.nextLine());
+            medicinFacade.search(choiceAdd);
+    }catch (InputMismatchException e){
+            System.out.println("Bạn đã nhập sai dữ liệu,Vui lòng nhập lại");
+            seach();
+        }
+}
 }

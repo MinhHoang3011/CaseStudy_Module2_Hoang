@@ -2,6 +2,7 @@ package controller;
 
 import model.*;
 
+import java.util.ArrayList;
 import java.util.Scanner;
 
 public class MedicinFacade {
@@ -124,7 +125,7 @@ public class MedicinFacade {
         return false;
     }
     public void backUpData() {
-        medicinProductManager.setDataCrawls();
+        medicinProductManager.setMedicineArrayList();
         System.err.println("Khôi phục dữ liệu thành công");
         System.out.println("--------------------------------------------------------------------------");
 
@@ -137,12 +138,45 @@ public class MedicinFacade {
                  break;
         }
         }
+        if (medicine !=null) {
+            System.out.println(medicine);
+        }else {
+            System.out.println("Không tìm thấy thuốc cần tìm");
+        }
         return medicine;
     }
+    public void search(int choiceAdd) {
+//        System.out.println("Nhập tên thuốc cần tìm kiếm !!! ");
+//        String newName = scanner.nextLine();
+//        ArrayList<Medicine> list = medicinProductManager.medicinesSearchByName(newName);
+//        if (list.isEmpty()){
+//            System.out.println("Không có dữ liệu thuốc cần tìm !!!");
+//        }else {
+//            for (Medicine m:  list
+//                 ) {
+//                System.out.println(m);
+//            }
+//        }
+        switch (choiceAdd) {
+            case 1:
+                System.out.println("Nhập tên thuốc cần tìm : ");
+                String name = scanner.nextLine();
+                ArrayList<Medicine> medicineArrayList = medicinProductManager.medicinesSearchByName(name);
+                if (medicineArrayList.isEmpty()){
+                    System.out.println("Không có tên thuốc nào cần tìm !!!");
+                }else {
+                    for (Medicine m:medicineArrayList
+                         ) {
+                        System.out.println(m);
+                    }
+                    break;
+                }
+            case 2:
+                System.out.println("Nhập ID thuốc cần tìm !!!");
+                int id = Integer.parseInt(scanner.nextLine());
+               findMedicineById(id);
 
-    public static void main(String[] args) {
-        MedicinFacade medicinFacade = new MedicinFacade();
-        medicinFacade.displayChoice(1);
+        }
     }
-    }
+}
 

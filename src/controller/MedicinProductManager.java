@@ -7,6 +7,8 @@ import storage.IOFileBinary;
 import java.io.File;
 import java.io.IOException;
 import java.util.ArrayList;
+import java.util.regex.Matcher;
+import java.util.regex.Pattern;
 
 public class MedicinProductManager implements MedicinManager<Medicine> {
     private ArrayList<Medicine> medicineArrayList;
@@ -97,5 +99,20 @@ public class MedicinProductManager implements MedicinManager<Medicine> {
         }
         }
         medicineIOFileBinary.writerFileData(medicineArrayList,"FileDataMedidcine");
+    }
+    private boolean checkKey(String key, String input){
+        key = key.toUpperCase();
+        String regex = ".*" + key + ".*";
+        Pattern pattern = Pattern.compile(regex);
+        Matcher matcher = pattern.matcher(input.toUpperCase());
+        return matcher.matches();
+    }
+    public ArrayList<Medicine> medicinesSearchByName(String keyword){
+        ArrayList<Medicine> medicineArrayList1 = new ArrayList<>();
+        for (Medicine m: medicineArrayList
+             ) {if (checkKey(keyword,m.getName())){
+                 medicineArrayList1.add(m);
+        }
+        }return medicineArrayList1;
     }
 }
