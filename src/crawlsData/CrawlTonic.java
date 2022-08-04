@@ -6,28 +6,28 @@ import org.jsoup.Jsoup;
 import org.jsoup.nodes.Document;
 import org.jsoup.nodes.Element;
 
-import java.awt.*;
 import java.io.IOException;
 import java.util.ArrayList;
 import java.util.List;
 
-public class CrawlsAnalgesic implements ICrawlsData{
-    private static CrawlsAnalgesic instance;
-    private final String url = "https://www.nhathuocankhang.com/thuoc-giam-dau-khang-viem#c=10023&protype=2&o=3&pi=0";
-    private ArrayList<Medicine> dataAnalgesic = new ArrayList<>();
+public class CrawlTonic implements ICrawlsData {
+    private static CrawlTonic instance;
+    private final String url = "https://www.nhathuocankhang.com/tim-kiem?key=thu%E1%BB%91c+b%E1%BB%95";
+    private ArrayList<Medicine> dataTonic = new ArrayList<>();
 
-    private CrawlsAnalgesic() {
+    private CrawlTonic() {
 
     }
-    public static CrawlsAnalgesic getInstance() {
+    public static CrawlTonic getInstance() {
         if (instance == null) {
-            return instance = new CrawlsAnalgesic();
-        }else return instance;
+            return instance = new CrawlTonic();
+        }
+        else return instance;
     }
-   public List<Medicine> getDataAnalgesic() {
+    public List<Medicine> getDataTonic() {
         crawlAll();
-        return dataAnalgesic;
-   }
+        return dataTonic;
+    }
     public void crawlAll() {
         try {
             Document doc = Jsoup.connect(url).get();
