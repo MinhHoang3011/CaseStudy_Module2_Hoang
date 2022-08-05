@@ -4,17 +4,17 @@ import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
 public class Validate {
-    private static Validate instance = null;
-    private Validate(){}
+    public static Validate instance = null;
+    public Validate(){}
 
     public static Validate getInstance(){
         if (instance == null) instance = new Validate();
         return instance;
     }
-    private static final String ACCOUNT_REGEX = "^(?=.*[a-z])(?=.*[0-9]).{8,12}$";
-    private static final String PASS_REGEX = "^(?=.*[a-zA-Z])(?=.*[0-9])(?=.*[\\W\\S]).{8,16}$";
-    private static final String PHONE_REGEX = "^[0-9]{10}$";
-    private static final String EMAIL_REGEX = "^[a-zA-Z][a-zA-Z0-9]{0,9}[._-]?[a-zA-Z0-9]{1,10}@[a-z]+\\.(com|vn)+$";
+    public static final String ACCOUNT_REGEX = "^(?=.*[a-z])(?=.*[0-9]).{8,12}$";
+    public static final String PASS_REGEX = "^(?=.*[a-zA-Z])(?=.*[0-9])(?=.*[\\W\\S]).{8,16}$";
+    public static final String PHONE_REGEX = "^[0-9]{10}$";
+    public static final String EMAIL_REGEX = "^[a-zA-Z][a-zA-Z0-9]{0,9}[._-]?[a-zA-Z0-9]{1,10}@[a-z]+\\.(com|vn)+$";
 
 
     public boolean validateAccount(String regex){

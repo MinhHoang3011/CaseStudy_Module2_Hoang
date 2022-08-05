@@ -1,6 +1,7 @@
 package systems;
 
 import controller.MedicinFacade;
+import login.Login;
 import model.Medicine;
 
 import java.util.ArrayList;
@@ -30,7 +31,7 @@ public class RunByUser {
                 System.out.println("║>[2]. Tìm kiếm sản phẩm Thuốc                               ║");
                 System.out.println("║>[3]. Thêm sản phẩm vào giỏ hàng                            ║");
                 System.out.println("║>[4]. Xóa sản phẩm khỏi giỏ hàng                            ║");
-                System.out.println("║>[5]. Đăng xuất                                             ║");
+                System.out.println("║>[0]. Đăng xuất                                             ║");
                 System.out.println("╚============================================================╝");
                 System.out.println("Mời bạn nhập lựa chọn");
                 int choice = Integer.parseInt(scanner.nextLine());
@@ -51,6 +52,7 @@ public class RunByUser {
                     case 0:
                         System.out.println("Đã đăng xuất !!!");
                         System.out.println("^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^");
+                        new Login().loginSystem();
                         break;
                     default:
                         System.out.println("Bạn đã nhập sai,Vui lòng nhập lại !!!");
@@ -108,13 +110,6 @@ public class RunByUser {
             System.out.println("^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^");
             addMedicinetoCart();
         }
-    }
-    public double getTotalPrice() {
-        double totalPrice = 0;
-        for (Medicine m : listCart) {
-            totalPrice += m.getPrice();
-        }
-        return totalPrice;
     }
     public void seach() {
         try {

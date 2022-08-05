@@ -1,8 +1,13 @@
 package systems;
 
 import controller.MedicinFacade;
+import login.Login;
+import model.Medicine;
+import storage.IOFileBinary;
 
+import java.util.ArrayList;
 import java.util.InputMismatchException;
+import java.util.List;
 import java.util.Scanner;
 
 public class RunbyAdmin {
@@ -13,7 +18,7 @@ public class RunbyAdmin {
 
     private final Scanner scanner = new Scanner(System.in);
     private MedicinFacade medicinFacade = MedicinFacade.getInstance();
-
+    private ArrayList<Medicine> listOfAdmin = new ArrayList<>();
     public RunbyAdmin() {
 
     }
@@ -30,6 +35,7 @@ public class RunbyAdmin {
                 System.out.println("║>[4]. Hiển thị sản phẩm thuốc                               ║");
                 System.out.println("║>[5]. Khôi phục dữ liệu                                     ║");
                 System.out.println("║>[6]. Tìm kiếm thuốc                                        ║");
+                System.out.println("║>[7]. Tổng giá tiền thuốc                                   ║");
                 System.out.println("║>[0]. Đăng xuất                                             ║");
                 System.out.println("╚============================================================╝");
                 System.out.println(" Mời nhập lựa chọn !!! >>");
@@ -67,9 +73,13 @@ public class RunbyAdmin {
                     case 6:
                         seach();
                         break;
+                    case 7:
+                        System.out.println("Tổng số tiền là :" + getTotalPrice());
+                        break;
                     case 0:
                         System.out.println("Đã đăng xuất !!!");
                         System.out.println("^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^");
+                        new Login().loginSystem();
                         break;
                     default:
                         System.out.println("ERROR");
@@ -231,4 +241,13 @@ public class RunbyAdmin {
             seach();
         }
 }
+    public double getTotalPrice() {
+        IOFileBinary ioFileBinary = new IOFileBinary();
+        List<Medicine> temp = (List<Medicine>) ioFileBinary.readFileData("FileDataMedicine");
+        double totalPrice = 0;
+        for (Medicine m : temp) {
+            totalPrice += m.getPrice();
+        }
+        return totalPrice;
+    }
 }
