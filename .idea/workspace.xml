@@ -5,15 +5,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="4a83c9ea-3753-4c39-885a-8b27425de8b5" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/login/Main.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/accounts/AccountManager.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/accounts/CreateUser.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/accounts/UserManager.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/login/Login.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/login/Login.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/login/Main.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/model/Bill.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/systems/RunByUser.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/systems/RunByUser.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/systems/RunbyAdmin.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/systems/RunbyAdmin.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/validate/Validate.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/validate/Validate.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/view/Client.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/view/Client.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -71,7 +67,20 @@
       <recent name="account.AccountManager" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.Main">
+  <component name="RunManager" selected="Application.Client">
+    <configuration name="Client" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="view.Client" />
+      <module name="CaseStudy_Module2" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="view.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="login.Main" />
       <module name="CaseStudy_Module2" />
@@ -87,19 +96,6 @@
     </configuration>
     <configuration name="MedicinFacade" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="controller.MedicinFacade" />
-      <module name="CaseStudy_Module2" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="controller.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="MedicinProductManager" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="controller.MedicinProductManager" />
       <module name="CaseStudy_Module2" />
       <extension name="coverage">
         <pattern>
@@ -139,11 +135,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.Client" />
         <item itemvalue="Application.Main" />
         <item itemvalue="Application.RunbyAdmin" />
         <item itemvalue="Application.RunByUser" />
         <item itemvalue="Application.MedicinFacade" />
-        <item itemvalue="Application.MedicinProductManager" />
       </list>
     </recent_temporary>
   </component>
@@ -166,7 +162,7 @@
       <workItem from="1659490271396" duration="2284000" />
       <workItem from="1659493132710" duration="20260000" />
       <workItem from="1659575276134" duration="35153000" />
-      <workItem from="1659654619742" duration="15187000" />
+      <workItem from="1659654619742" duration="22328000" />
     </task>
     <servers />
   </component>

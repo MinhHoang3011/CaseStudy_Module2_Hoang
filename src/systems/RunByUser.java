@@ -31,6 +31,8 @@ public class RunByUser {
                 System.out.println("║>[2]. Tìm kiếm sản phẩm Thuốc                               ║");
                 System.out.println("║>[3]. Thêm sản phẩm vào giỏ hàng                            ║");
                 System.out.println("║>[4]. Xóa sản phẩm khỏi giỏ hàng                            ║");
+                System.out.println("║>[5]. Hiển thị sản phẩm trong giỏ hàng                      ║");
+                System.out.println("║>[6]. Tổng tiền thuốc                                       ║");
                 System.out.println("║>[0]. Đăng xuất                                             ║");
                 System.out.println("╚============================================================╝");
                 System.out.println("Mời bạn nhập lựa chọn");
@@ -49,6 +51,11 @@ public class RunByUser {
                     case 4:
                         displayCart();
                         removeMedicineToCart();
+                    case 5:
+                        displayCart();
+                        break;
+                    case 6:
+                        System.out.println("Tổng tiền thuốc trong giỏ hàng : "+totalPrice());
                     case 0:
                         System.out.println("Đã đăng xuất !!!");
                         System.out.println("^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^");
@@ -127,4 +134,13 @@ public class RunByUser {
             System.out.println("Bạn đã nhập sai dữ liệu,Vui lòng nhập lại");
             seach();
         }
-    }}
+    }
+    public double totalPrice() {
+        double totalPrice = 0;
+        for (Medicine x : listCart) {
+            totalPrice += x.getPrice();
+        }
+        return totalPrice;
+    }
+}
+
