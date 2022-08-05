@@ -5,8 +5,23 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="4a83c9ea-3753-4c39-885a-8b27425de8b5" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/FileDataAccount" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FileDataUserAcc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/accounts/AccountManager.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/accounts/Admin.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/accounts/CreateUser.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/accounts/User.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/accounts/UserManager.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/validate/Validate.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FileDataAnalgesic" beforeDir="false" afterPath="$PROJECT_DIR$/FileDataAnalgesic" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FileDataMedicine" beforeDir="false" afterPath="$PROJECT_DIR$/FileDataMedicine" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/controller/MedicinFacade.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/controller/MedicinFacade.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/login/Login.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/login/Login.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/storage/IOFileBinary.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/storage/IOFileBinary.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/systems/RunByUser.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/systems/RunByUser.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/validate/DetailValidate.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/validate/ValidateAll.java" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -65,19 +80,6 @@
     </key>
   </component>
   <component name="RunManager" selected="Application.RunbyAdmin">
-    <configuration name="AnalgesicManager" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="controller.AnalgesicManager" />
-      <module name="CaseStudy_Module2" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="controller.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="ListDataMedicin" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="crawlsData.ListDataMedicin" />
       <module name="CaseStudy_Module2" />
@@ -117,6 +119,19 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="RunByUser" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="systems.RunByUser" />
+      <module name="CaseStudy_Module2" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="systems.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="RunbyAdmin" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="systems.RunbyAdmin" />
       <module name="CaseStudy_Module2" />
@@ -133,10 +148,10 @@
     <recent_temporary>
       <list>
         <item itemvalue="Application.RunbyAdmin" />
+        <item itemvalue="Application.RunByUser" />
         <item itemvalue="Application.MedicinFacade" />
         <item itemvalue="Application.MedicinProductManager" />
         <item itemvalue="Application.ListDataMedicin" />
-        <item itemvalue="Application.AnalgesicManager" />
       </list>
     </recent_temporary>
   </component>
@@ -159,7 +174,7 @@
       <workItem from="1659490271396" duration="2284000" />
       <workItem from="1659493132710" duration="20260000" />
       <workItem from="1659575276134" duration="35153000" />
-      <workItem from="1659654619742" duration="2321000" />
+      <workItem from="1659654619742" duration="12319000" />
     </task>
     <servers />
   </component>

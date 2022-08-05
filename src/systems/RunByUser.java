@@ -1,7 +1,6 @@
 package systems;
 
 import controller.MedicinFacade;
-import login.Login;
 import model.Medicine;
 
 import java.util.ArrayList;
@@ -9,6 +8,10 @@ import java.util.InputMismatchException;
 import java.util.Scanner;
 
 public class RunByUser {
+//    public static void main(String[] arg) {
+//        RunByUser runByUser = new RunByUser();
+//        runByUser.menuOfUser();
+//    }
     private final Scanner scanner = new Scanner(System.in);
     private final MedicinFacade medicinFacade = MedicinFacade.getInstance();
     private final RunbyAdmin runbyAdmin = new RunbyAdmin();
@@ -36,7 +39,7 @@ public class RunByUser {
                         runbyAdmin.display();
                         break;
                     case 2:
-                        medicinFacade.search();
+                        runbyAdmin.seach();
                         break;
                     case 3:
                         runbyAdmin.display();
@@ -113,4 +116,20 @@ public class RunByUser {
         }
         return totalPrice;
     }
-}
+    public void seach() {
+        try {
+            System.out.println("╔============================================╗");
+            System.out.println("║   ▂ ▃ ▅ ▆ █ TÌM KIẾM SẢN PHẨM  █ ▆ ▅ ▃ ▂   ║");
+            System.out.println("╠============================================╣");
+            System.out.println("║>[1]. Theo tên thuốc                        ║");
+            System.out.println("║>[2]. Theo ID                               ║");
+            System.out.println("║>[0]. Thoát                                 ║");
+            System.out.println("╚============================================╝");
+            System.out.print(" Mời bạn nhập vào lựa chọn: ");
+            int choiceAdd = Integer.parseInt(scanner.nextLine());
+            medicinFacade.search(choiceAdd);
+        } catch (InputMismatchException e) {
+            System.out.println("Bạn đã nhập sai dữ liệu,Vui lòng nhập lại");
+            seach();
+        }
+    }}

@@ -110,10 +110,6 @@ public class MedicinFacade {
                 vitaminManager.editPrice(id,price);
                 tonicManager.editPrice(id,price);
                 break;
-//            case 3:
-//                System.out.println("Nhập đơn vị mới");
-//                String unit = scanner.nextLine();
-//                medicinProductManager.editUnit(id, unit);
         }
     }
     public boolean checkID(int id) {
@@ -146,17 +142,7 @@ public class MedicinFacade {
         return medicine;
     }
     public void search(int choiceAdd) {
-//        System.out.println("Nhập tên thuốc cần tìm kiếm !!! ");
-//        String newName = scanner.nextLine();
-//        ArrayList<Medicine> list = medicinProductManager.medicinesSearchByName(newName);
-//        if (list.isEmpty()){
-//            System.out.println("Không có dữ liệu thuốc cần tìm !!!");
-//        }else {
-//            for (Medicine m:  list
-//                 ) {
-//                System.out.println(m);
-//            }
-//        }
+
         switch (choiceAdd) {
             case 1:
                 System.out.println("Nhập tên thuốc cần tìm : ");

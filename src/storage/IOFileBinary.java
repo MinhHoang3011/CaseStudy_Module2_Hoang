@@ -5,7 +5,6 @@ import java.util.ArrayList;
 
 public class IOFileBinary<E> implements Serializable {
     private static final long serialVersionUID = -4333316296251054416L;
-
     public void writerFileData(ArrayList<E> arrayData , String pathName){
         try {
             ObjectOutputStream objectOutputStream = new ObjectOutputStream(new FileOutputStream(new File(pathName)));
